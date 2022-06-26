@@ -7,7 +7,7 @@ def rr(n):
 #d右下
 def know(n,a,b,c,d,picture):
     if n == a : #已經擺上n個皇后
-        for i in picture:
+        for i in picture :
             print(*i)
         print("---------------")
     for k in range(n): #k去試每一欄
@@ -17,7 +17,6 @@ def know(n,a,b,c,d,picture):
             know(n,a+1,b,c,d,picture)
             b[k],c[a+k],d[a-k+n-1]=True,True,True #恢復初始資料
             picture[a][k]=0
-
 def main():
     n=int(input())
     if n == 2 or n == 3:

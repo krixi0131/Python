@@ -1,15 +1,25 @@
-def buy(money,target,species,prices,num,list):
-    if num==species:
-        if target==0: 
-            print(*list)
-        return
-    for i in range(min(target,money//prices[num]),-1,-1):
-        buy(money-i*prices[num],target-i,species,prices,num+1,list+[i])   
+def ecup(d,k): 
+    for i in range(10**(d-1),10**(d)):        
+        p=str(i)
+        judge = True
+        for j in range(1,len(p)):          
+            if abs(int(p[j])-int(p[j-1]))>k:
+                judge = False
+                break
+        if judge:
+            print(i)
+#d=代表數字有幾位數
+#k=代表限制距離
 def main():
-    money,target,species=map(int,input().split())
-    prices=list(map(int,input().split()))
-    if min(prices)*target>money:
-        print('無法買滿')
-    else:
-        buy(money,target,species,prices,0,[])
-main()
+    d,k=map(int,input().split()) 
+    ecup(d,k)
+main()   
+  
+'''
+def jdua(number,k):
+    for j in range(1,len(number)):
+        if abs(int(number[j])-int(number[j-1]))>k:
+            return False 
+    return True    
+'''       
+
