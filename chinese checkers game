@@ -1,4 +1,4 @@
-'''python
+```python
 def main():
     n=int(input()) #矩陣邊長
     t=list(map(int,input().split()))
