@@ -1,4 +1,4 @@
-
+https://163.22.17.112/problem/1101%20exam5?fbclid=IwAR1ROOuazNIfIU0wjKu8WN-WTNUQgn2GUUpZ36nW0L4atn8G3uh1NBqlnMQ
 def main():
     n=int(input()) #矩陣邊長
     t=list(map(int,input().split()))
