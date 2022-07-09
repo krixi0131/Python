@@ -97,4 +97,3 @@ def jump(row,col,n,gg,num,maxnum):
     return maxnum
 main()    
     
-    '''
